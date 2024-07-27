@@ -91,6 +91,8 @@ class PodPlayerController {
   /// returns true if video is playing
   bool get isVideoPlaying => _ctr.videoCtr?.value.isPlaying ?? false;
 
+  double get playBackSpeed => _ctr.videoCtr?.value.playbackSpeed ?? 0;
+
   /// returns true if video is in buffering state
   bool get isVideoBuffering => _ctr.videoCtr?.value.isBuffering ?? false;
 
