@@ -87,6 +87,7 @@ class PodPlayerController {
 
   /// returns true if video player is initialized
   bool get isInitialised => _ctr.videoCtr?.value.isInitialized ?? false;
+  double get playBackSpeed => _ctr.videoCtr?.value.playbackSpeed ?? 0;
 
   /// returns true if video is playing
   bool get isVideoPlaying => _ctr.videoCtr?.value.isPlaying ?? false;
